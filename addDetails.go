@@ -33,7 +33,11 @@ type Detail struct{
 			XAmzCfId string `json:"X-Amz-Cf-Id"`
 		} `json:"headers"`
 		Url string `json:"url"`
-		Encoding string `json:"encoding"`
+		Encoding [] string `json:"encoding"`
+		History [] string `json:"history"`
+		Cookies [] string `json:"cookies"`
+		Elapsed [] string `json:"elapsed"`
+		Request [] string `json:"request"`
 		Reason string `json:"reason"`
 		
 	} `json:"details"`
